@@ -18,7 +18,6 @@ Home - allows users to choose whether or not to hire me by browersing the webpag
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 Features Left to Implement
-
 More thing for my portfolio
 More links to social media accounts
 
