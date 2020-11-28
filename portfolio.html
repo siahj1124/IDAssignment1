@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Normalize.css">
+    <style>
+        @media screen and (min-width: 700px){
+            .menu-dropdown{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 700px){
+            .slide_one{
+                display:flex;
+                flex-direction: column;
+                margin-top:85px;
+                margin-bottom: 340px;
+                padding-top: 120px;
+                height:auto;
+                align-items: center;
+                background-color: #3a00ff;
+                background-image: radial-gradient(#3a00ff,#2a9bf8);
+                width: auto;
+
+            }
+
+            .navbar-nav{
+                display:none;    
+            }
+
+
+
+            .intro {
+                padding:4%;
+                display:flex;
+                align-items: center;
+                margin-top: 30px;
+                padding-top: 10%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 10%;
+                font-size: 0.6em;
+            }        
+
+            .school{
+                display: block;
+            }
+
+            .sec_school{
+                margin-bottom: 250px;
+            }
+
+            .poly_school_logo{
+                max-width:100%
+            }
+
+            /* style for the css menu dropdown container */
+            .menu {
+                position:relative;
+                display:inline-block;
+
+
+            }
+
+            /* style for the button */
+            .menu:before {
+                content: "\2630 \a0 Menu"; 
+                color:#696969;
+                padding: 32px 10px;
+                background: #ffff;
+            }
+
+            .menu:focus { pointer-events:none; }
+
+            /* If :focus detected the dropdown menu is displayed by making it visible */
+            .menu:focus .menu-dropdown { opacity:1; visibility:visible; }
+
+            /* style for the dropdown box */
+            .menu-dropdown {
+                background-color: #364656;
+                width: auto;
+                margin:3px 0 0 0;
+                padding: 10px;
+                pointer-events: auto;
+                position: absolute;
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+                transition: visibility 1s;
+                background: #ffff;
+            }
+
+            /* style the links in the dropdown */
+            .menu-dropdown a {
+                background:transparent;
+                border:none;
+                outline:0;
+                display:block;
+                color:#696969;
+                text-decoration:none;
+                width:160px;
+                padding:10px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-name" href="#">Hao Jun</a>
+            </div>
+            <div class="navbar-nav">
+              <div class="home"><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="-12 0 90 60" ><defs><style>.cls-1{fill:#06f;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M.1,18.74,33.66,0a.21.21,0,0,1,.19,0L67.42,18.74a.19.19,0,0,1-.1.35H61.44a.19.19,0,0,0-.18.19V52.44a1.65,1.65,0,0,1-1.65,1.65H40a.18.18,0,0,1-.18-.19V36.78a.2.2,0,0,0-.19-.19H27.93a.19.19,0,0,0-.18.19V53.9a.19.19,0,0,1-.19.19H7.91a1.65,1.65,0,0,1-1.65-1.65V19.28a.2.2,0,0,0-.19-.19H.19A.19.19,0,0,1,.1,18.74Z"/></g></g></svg></a></div>
+              <div class="portfolio"><a href="portfolio.html" target="_blank">Portfolio</a></div>
+              <div class="letsworktogether"><a href="contact.html"><button>Let's Work Together</button></a></div>
+  
+          </div>
+          <div tabindex="0" class="menu">
+            <div class="menu-dropdown">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Let's Work Together</a>
+            </div>
+         </div>
+        </div>
+   </nav>
+
+   <p class = header_name>Portfolio</p>
+   <div class="portfolio_box">
+        <div class="one">
+            <p class="heading">APP SPLASH ART DESIGN</p>
+            <p class="description">PHOTO EDITOR APP </p>
+            <img src="images/portfolio/app splash art design/splash art design.png" alt="picture of app splash art design">
+
+        </div>
+
+        <div class="two">
+            <p class="heading">APP SPLASH SCREEN DESIGN</p>
+            <p class="description">PHOTO EDITOR APP</p>
+            <img src="images/portfolio/app splash screen design/app splash design with animation.gif" alt="picture of app splash screen design">
+
+        </div>
+
+        <div class="three">
+            <p class="heading">APP INFOGRAPHIC</p>
+            <p class="description">PHOTO EDITOR APP</p>
+            <img src="images/portfolio/app Infographic/app infograpic.png" alt="picture of app infographic design">
+
+        </div>
+
+        <div class="four">
+            <p class="heading">SINGAPORE LOCAL KUEH</p>
+            <p class="description">KUEH ILLUSTRATION</p>
+            <img src="images/portfolio/kueh/local keuh.jpg" alt="picture of five of singapore's local kueh">
+
+        </div>
+
+        <div class="five">
+            <p class="heading">RATVENTURE</p>
+            <p class="description">PYTHON GAME DRAFT</p>
+            <div class="game_screen">
+                <img src="images/portfolio/Ratventure/game_screen_one.png" alt="game screen part one">
+                <img src="images/portfolio/Ratventure/game_screen_two.png" alt="game screen part two">
+                <img src="images/portfolio/Ratventure/game_screen_three.png" alt="game screen part three">
+                <img src="images/portfolio/Ratventure/game_screen_four.png" alt="game screen part four">
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
